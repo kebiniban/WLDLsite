@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordleach - Rapid Reading Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Word<span class="accent">l</span>each</a>
+        
+        <ul class="nav-links">
+            <li><a href="#publish">Pu<span class="accent">b</span>lish</a></li>
+            <li><a href="#download">Down<span class="accent">l</span>oad</a></li>
+            <li><a href="#about">Abo<span class="accent">u</span>t us</a></li>
+            <li><a href="#" class="community-btn">Com<span class="accent">m</span>unity</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Read faster. Learn better.<br>Stop skimming.</h1>
+            <p class="subhead">The ultimate RSVP reader for Windows. Turn any PDF, image, or text into a focused reading stream.</p>
+            
+            <div class="hero-cta">
+    <div class="button-grid">
+        <a href="#download" class="btn btn-primary">
+            <span class="icon">🪟</span> Windows
+        </a>
+        
+        <a href="LINK_TO_APPLE_STORE" class="btn btn-primary">
+            <span class="icon">🍎</span> App Store
+        </a>
+        
+        <a href="LINK_TO_GOOGLE_PLAY" class="btn btn-primary">
+            <span class="icon">🤖</span> Google Play
+        </a>
+    </div>
+    <p class="small-text">v1.0.0 | Free to download</p>
+</div>
+    
+
+<div class="demo-container frame-up">
+    <div class="rsvp-player">
+        <div class="guide-line top"></div>
+        <div class="guide-line bottom"></div>
+
+        <div class="reader-display">
+            <div class="word-container">
+                <span id="word-left">Word</span><span id="word-center" class="accent">l</span><span id="word-right">each</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="ctrl-btn disabled"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 19l-9-7 9-7v14zM22 19l-9-7 9-7v14z"/></svg></button>
+            <button class="ctrl-btn disabled"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 19l-9-7 9-7v14z"/></svg></button>
+
+            <button id="play-pause-btn" class="ctrl-btn play-btn">
+                <svg id="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="icon-pause" class="hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+
+            <button class="ctrl-btn disabled"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 19l9-7-9-7v14z"/></svg></button>
+            <button class="ctrl-btn disabled"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 19l9-7-9-7v14zM2 19l9-7-9-7v14z"/></svg></button>
+        </div>
+        
+        <div class="heart-icon">
+             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section-spacer">
+        <div class="container">
+            <h2 class="section-title text-center">Who even <span class="accent">are</span> you?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Learn faster</h3>
+                    <p>It's not just reading. Seriously, you'll notice a difference in two days. Better recall, better memory. And the best part? It's actually fun.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Find your next read</h3>
+                    <p>The Browse Library section is the highlight. Looking for things to read is never fun, so we're including the best short stories and iconic essays.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Proven methods</h3>
+                    <p>If you can't tell how well it works by the average reading speed feeling agonizingly slow, the studies on RSVP (Rapid Serial Visual Presentation) will convince you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section-spacer features-section">
+        <div class="container">
+            <h2 class="section-title text-center">Take any image or PDF<br>and get to reading.</h2>
+            
+            <div class="feature-container">
+                <div class="feature-controls">
+                    <div class="feature-btn" data-target="video-3">
+                        <h3>Article Library</h3>
+                        <p>View our ever-expanding curated list of the best articles, essays, and stories.</p>
+                    </div>
+                    <div class="feature-btn active" data-target="video-1">
+                        <h3>Picture to text</h3>
+                        <p>From phone or computer, upload an image or PNG and get to reading.</p>
+                    </div>
+                    <div class="feature-btn" data-target="video-2">
+                        <h3>Clean Copy+Paste</h3>
+                        <p>Our system detects and ignores advertisements and annoying page numbers.</p>
+                    </div>
+                    <div class="feature-btn" data-target="video-4">
+                        <h3>History Feature</h3>
+                        <p>Access your reading history or favorites at the click of a button</p>
+                    </div>
+                </div>
+
+                <div class="feature-display">
+                    <div class="video-stack">
+                        <video id="video-1" class="feature-video active" autoplay loop muted playsinline poster="https://via.placeholder.com/600x400/333/ff003c?text=Feature+1+Video">
+                            <source src="videos/Drag3drop.mp4" type="video/mp4"></video>
+                        
+                        <video id="video-2" class="feature-video" autoplay loop muted playsinline poster="https://via.placeholder.com/600x400/333/ff003c?text=Feature+2+Video">
+                            <source src="videos/Pdf2wl.mp4" type="video/mp4"></video>
+                        
+                        <video id="video-3" class="feature-video" autoplay loop muted playsinline poster="https://via.placeholder.com/600x400/333/ff003c?text=Feature+3+Video">
+                            <source src="videos/Library1.mp4" type="video/mp4"></video>
+                        
+                        <video id="video-4" class="feature-video" autoplay loop muted playsinline poster="https://via.placeholder.com/600x400/333/ff003c?text=Feature+4+Video">
+                            <source src="videos/Historyfeature.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="section-spacer download-section">
+        <div class="container">
+            <div class="download-header text-center">
+                 <h2 class="section-title">Download for Wi<span class="accent">n</span>dows.</h2>
+                 <p class="subhead">We don't pay Microsoft 400$ a month for the "Verified Publisher" position. You'll just have to click two extra buttons.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+    <h3>Get the Installer</h3>
+    <p>Download the latest version of the Wordleach setup file.</p>
+    
+ <a href="https://github.com/kebiniban/wordleach-download/releases/download/v1.0/wordleach-app-1.0.0.Setup.exe" class="btn btn-primary">
+    Download .exe
+</a>
+    
+</div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Run past the warning</h3>
+                        <p>Windows will show a "SmartScreen" warning. This is normal for new apps.</p>
+                        <p>Click <strong>"More Info"</strong> then <strong>"Run Anyway"</strong>.</p>
+                        <img src="windowswarningfix.png" alt="Windows Warning Screen" class="step-image">
+                    </div>
+                </div>
+
+                 <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Get Reading</h3>
+                        <p>Once installed, launch Wordleach from your desktop and start speeding up your brain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-spacer publish-section text-center">
+        <div class="container">
+            <h2 class="section-title">Publish your writing.</h2>
+            <p class="subhead">Send us your piece and details so we can get your writing the recognition it deserves in our library.</p>
+            <a href="mailto:contact@wordleach.com" class="btn btn-outline">Send us a message</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p class="logo">Word<span class="accent">leach</span></p>
+            <p>© 2026 Wordleach. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
